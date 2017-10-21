@@ -14,6 +14,13 @@ div {
 .center {
   justify-content: center;
 }
+.landscape {
+  width: 100%
+}
+.portrate{
+  width: 960px;
+}
+
 .first{
   border: 1px solid red;
   flex-direction: column;
@@ -24,10 +31,8 @@ div {
 /*This section is to design the top black line*/
 .first-logo {
 background-color: black;
-width: 100%;
 }
 .logo {
-  width: 960px;
   text-align: left;
   align-items: center;
   border: 1px solid black;
@@ -46,10 +51,9 @@ width: 100%;
 /*This part style the new arrival section*/
 .new-arrival {
   height: 25rem;
-  width: 100%;
+
 }
 .new {
-  width: 960px;
   justify-content: space-between;
   flex-flow: wrap;
 }
@@ -86,7 +90,6 @@ width: 100%;
 
 .links .link-section {
   justify-content: space-between;
-  width: 960px;
 }
 .link-section span {
   color: white;
@@ -95,9 +98,7 @@ width: 100%;
 /* This section style the second section*/
 .second {
   flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 960px;
+  align-items: center;
   margin: 3rem auto 4rem;
 }
 /*This section style the the products div*/
@@ -107,7 +108,6 @@ width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 3rem 0;
-
 
 }
 .products span {
@@ -124,9 +124,9 @@ span p {
   color: white;
   padding: 0.5rem auto;
 }
+/* This section style the contacts div */
 .contacts {
   justify-content: space-between;
-  width: 960px;
 }
 .contacts span {
   width: 35%;
@@ -139,6 +139,7 @@ span p {
   color: black;
   background-color: white;
 }
+/* This section is the copyright section*/
 body .third {
   height: 5rem;
   background-color: black;
@@ -148,4 +149,9 @@ body .third {
   width: 960px;
   color: white;
   text-align: left;
+}
+@@media only screen and (min-width:961px) {
+.portrate .menu {
+  display:none;
+}
 }

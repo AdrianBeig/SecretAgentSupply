@@ -150,8 +150,3 @@ body .third {
   color: white;
   text-align: left;
 }
-@@media only screen and (min-width:961px) {
-.portrate .menu {
-  display:none;
-}
-}

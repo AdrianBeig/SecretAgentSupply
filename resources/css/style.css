@@ -175,13 +175,42 @@ body .third {
   }
 }
 
-@media screen and (min-width:961px){
+@media screen and (orientation=portrait){
 
   .link-section .menu {
     display: none;
   }
-  ..products span {
+  .products span {
     width: 30%;
+    margin: 0.5rem auto;
   }
+}
 
+@media screen and (max-width:480px){
+  .watches {
+    display: none;
+  }
+  .pen {
+    width: 90%;
+    margin: 3rem auto;
+  }
+  .contacts {
+    width: 100%;
+    flex-flow: wrap;
+  }
+  .contacts span {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  .new-arrival {
+    height: 80%;
+  }
+  .new .text{
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    padding: 1rem 2rem;
+  }
+  .third .copyright {
+    text-align: center;
+  }
 }

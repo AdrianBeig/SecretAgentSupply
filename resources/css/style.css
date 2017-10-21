@@ -1,13 +1,21 @@
 html {
-  font-size: 18px;
+  font-size: 40px;
 }
 body {
   display: block;
   text-align: center;
 }
+div {
+  font-family: Helvetica;
+}
+.flex {
+  display:flex;
+}
+.center {
+  justify-content: center;
+}
 .first{
   border: 1px solid red;
-  display: flex;
   flex-direction: column;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   background-repeat: no-repeat;
@@ -15,14 +23,11 @@ body {
 }
 /*This section is to design the top black line*/
 .first-logo {
-display: flex;;
-justify-content:center;
 background-color: black;
 width: 100%;
 }
 .logo {
   width: 960px;
-  display: flex;
   text-align: left;
   align-items: center;
   border: 1px solid black;
@@ -31,7 +36,6 @@ width: 100%;
 
 .logo h5 {
   padding: 0.66rem 0.5rem;
-  font-family: Helvetica;
   font-size: 1rem;
   color: white;
 }
@@ -43,55 +47,67 @@ width: 100%;
 .new-arrival {
   height: 25rem;
   width: 100%;
-  display: flex;
+}
+.new {
+  width: 960px;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.new div {
+  width: 20rem;
+}
+
+.new .text{
+  margin-top: 9rem;
+  margin-bottom: 7rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
   text-align: left;
 
 }
 
-.new-arrival .text{
-  width: 20rem;
-  margin: 9rem;
-  padding: 2rem 3rem;
-  background-color: black;
-  color: white;
-  font-family: Helvetica;
-  font-weight: bold;
-}
-
 .text p {
   padding-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.text h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 /* This part is the links section */
 .links {
-  display: flex;
-  justify-content: center;
   background-color: firebrick;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .links .link-section {
-  display: flex;
   justify-content: space-between;
   width: 960px;
 }
 .link-section span {
-  margin: 0.75rem auto;
+  color: white;
+  margin: 0.75rem 0;
 }
 /* This section style the second section*/
 .second {
-  display: flex;
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
+  width: 960px;
+  margin: 3rem auto 4rem;
 }
 /*This section style the the products div*/
 .products {
-  width: 960px;
   height: auto;
-  display: flex;
   align-content: center;
   justify-content: space-between;
-  margin: 3rem auto;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+
 
 }
 .products span {
@@ -108,10 +124,28 @@ span p {
   color: white;
   padding: 0.5rem auto;
 }
-
-.second .contacts {
-  width: 960px;
-  display: flex;
-  align-content: center;
+.contacts {
   justify-content: space-between;
+  width: 960px;
+}
+.contacts span {
+  width: 35%;
+  text-align: left;
+}
+.location, .hours {
+  padding: 1rem 2rem;
+}
+.location2,.hours2 {
+  color: black;
+  background-color: white;
+}
+body .third {
+  height: 5rem;
+  background-color: black;
+  align-items: center;
+}
+.third .copyright {
+  width: 960px;
+  color: white;
+  text-align: left;
 }

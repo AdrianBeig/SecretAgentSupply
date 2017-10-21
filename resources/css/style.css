@@ -95,6 +95,8 @@ background-color: black;
   color: white;
   margin: 0.75rem 0;
 }
+
+
 /* This section style the second section*/
 .second {
   flex-direction: column;
@@ -112,7 +114,7 @@ background-color: black;
 }
 .products span {
   border: 4px solid black;
-  width: 30%;
+
 }
 span img {
   margin: 2rem;
@@ -149,4 +151,37 @@ body .third {
   width: 960px;
   color: white;
   text-align: left;
+}
+
+/* This section is for responsive style*/
+@media screen and (max-width:960px){
+  .portrate {
+    width: 100%;
+  }
+  .glasses {
+    display: none;
+  }
+  .full {
+    display: none;
+  }
+  .menu {
+    color: white;
+    margin: 0.75rem;
+    width: 100%;
+    padding: 0 auto;
+  }
+  .pen , .watches {
+      width: 47%;
+  }
+}
+
+@media screen and (min-width:961px){
+
+  .link-section .menu {
+    display: none;
+  }
+  ..products span {
+    width: 30%;
+  }
+
 }

@@ -1,5 +1,5 @@
 html {
-  font-size: 40px;
+  font-size: 18px;
 }
 body {
   display: block;
@@ -212,5 +212,20 @@ body .third {
   }
   .third .copyright {
     text-align: center;
+  }
+  .logo h5 {
+    display: none;
+  }
+  .logo {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:320px){
+  .landscape {
+    width: 320px;
+  }
+  .portrate{
+    width: 320px;
   }
 }
